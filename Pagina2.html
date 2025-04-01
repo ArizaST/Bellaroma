@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellaroma</title>
+    <link rel="icon" type="image/png" href="Imagenes/bellaroma-website-favicon-color.png">
+    <link rel="stylesheet" href="Pagina2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="Pagina1.html"><img src="Imagenes/logo.png" alt="logo"></a>
+        </div>
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="BUSCAR">
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="Pagina3.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-img">
+            <img src="Imagenes/MissDior.png" alt="Miss Dior"/>
+        </div>
+
+        <div class="container-info-producto">
+            <div class="container-precio">
+               <span>$200.00</span> 
+            </div>
+
+            <div class="container-detalles-producto">
+                <div class="form-group">
+                    <label for="talla">Talla</label>
+                    <select name="talla" id="talla">
+                        <option value="">Escoge una opción</option>
+                        <option value="50 ML">50 ML</option>
+                        <option value="100 ML">100 ML</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container-add-carrito">
+                <div class="container-cantidad">
+                    <p>Cantidad: <input type="number" id="quantity" value="1"></p>
+                </div>
+
+                <button class="btn-add-to-carrito" onclick="agregarAlCarrito()">
+                    <i class="fa-solid fa-plus"></i>
+                    Agregar al Carrito
+                </button>
+            </div>
+
+            <div class="container-descripcion">
+                <div class="title-descripcion">
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="text-descripcion">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos dicta eligendi, est vitae voluptatum nesciunt illo officiis inventore odit impedit hic nobis nihil minus iusto perferendis fuga corporis. Dolorum.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed qui architecto sequi necessitatibus sapiente non libero tempora! Earum nesciunt labore, corporis voluptatum molestias at adipisci deleniti obcaecati, aspernatur unde repudiandae.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-info-adicional">
+                <div class="title-info-adicional">
+                    <h4>Información Adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-info-adicional">
+                    <p>----------</p>
+                </div>
+            </div>
+
+            <div class="container-reviews">
+                <div class="title-reviews">
+                    <h4>Reseñas</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews">
+                    <p>----------</p>
+                </div>
+            </div>
+
+            <div class="container-redes">
+                <span>Compartir</span>
+                <div class="container-botones-redes">
+                    <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/?gl=CO&hl=es-419"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="container-productos-relacionados">
+        <h2>Productos Relacionados</h2>
+        <div class="card-lista-productos">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Imagenes/Escale.jpg" alt="producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Escale à Portofino</h3>
+                        <p class="category">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique, sed, impedit quo quidem iure incidunt molestias aliquid voluptas, non veritatis molestiae perspiciatis laborum libero aut modi culpa iusto voluptatibus.
+                        </p>
+                    </div>
+                    <div class="precio">$280</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Imagenes/purple.jpg" alt="producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>PURPLE OUD</h3>
+                        <p class="category">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique, sed, impedit quo quidem iure incidunt molestias aliquid voluptas, non veritatis molestiae perspiciatis laborum libero aut modi culpa iusto voluptatibus.
+                        </p>
+                    </div>
+                    <div class="precio">$300</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Imagenes/Addict.jpg" alt="producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Addict</h3>
+                        <p class="category">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique, sed, impedit quo quidem iure incidunt molestias aliquid voluptas, non veritatis molestiae perspiciatis laborum libero aut modi culpa iusto voluptatibus.
+                        </p>
+                    </div>
+                    <div class="precio">$280</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="Imagenes/Joy.png" alt="producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>JOY</h3>
+                        <p class="category">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique, sed, impedit quo quidem iure incidunt molestias aliquid voluptas, non veritatis molestiae perspiciatis laborum libero aut modi culpa iusto voluptatibus.
+                        </p>
+                    </div>
+                    <div class="precio">$150</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="https://kit.fontawesome.com/7ce88deda5.js" crossorigin="anonymous"></script>
+    <script src="Pagina2.js"></script>
+    
+</body>
+</html>
